@@ -239,7 +239,7 @@ footer p {
 
 
 /* Responsive Styles */
-/*@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     header {
         flex-direction: column;
         align-items: flex-start;
@@ -250,9 +250,9 @@ footer p {
         flex-direction: column;
         align-items: flex-start;
         display: none; /* Hide by default for mobile */
-    }*/
+    }
 
-    /*header .nav-toggle {
+    header .nav-toggle {
         display: block;
         color: #fff;
         font-size: 1.5em;
@@ -336,35 +336,5 @@ img {
     margin-right: 20px;
     /* Mobile adjustment */
     margin-right: 0;
-}*/
-
-.menu-toggle {
-    display: none;  /* Hidden by default */
-    font-size: 1.5em;
-    cursor: pointer;
-    padding: 10px;
-    color: #fff;
-}
-
-@media screen and (max-width: 600px) {
-    .menu-toggle {
-        display: block;  /* Show on mobile */
-    }
-
-    .navbar {
-        display: none;  /* Hide the navbar by default */
-    }
-
-    .navbar.active {
-        display: block;  /* Show when active */
-    }
-
-    .navbar ul {
-        flex-direction: column;
-    }
-
-    .navbar li {
-        margin: 10px 0;
-    }
 }
 
