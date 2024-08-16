@@ -341,16 +341,19 @@ img {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 15px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    text-align: center;
     opacity: 1;
     transition: opacity 0.5s ease-out;
     z-index: 1000;
-    font-family: 'Arial', sans-serif;
-    font-size: 14px;
+    transform: translate(-50%, -50%);
+    /* Initial position, will be overridden by JS */
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
 }
+
 
