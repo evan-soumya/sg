@@ -11,11 +11,11 @@ body {
 
 a {
     text-decoration: none; /* Remove underline */
-    color: #e8491d; /* Change this to your desired color */
+    color: #FFF8DC; /* Change this to your desired color */
 }
 /* Link color on hover */
 a:hover {
-    color: #FFF8DC; /* Change this to your desired hover color #444*/
+    color: #e8491d; /* Change this to your desired hover color #444*/
     text-decoration: underline; /* Optionally add underline on hover */
 }
 /* Link color when clicked */
