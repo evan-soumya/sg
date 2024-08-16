@@ -29,6 +29,18 @@ function copyLink() {
     dummy.select();
     document.execCommand('copy');
     document.body.removeChild(dummy);
-    alert("Website link copied to clipboard!");
+
+    // Create a notification div
+    const notification = document.createElement('div');
+    notification.id = 'copy-notification';
+    notification.textContent = 'Link Copied!';
+    document.body.appendChild(notification);
+
+    // Remove the notification after 2 seconds
+    setTimeout(() => {
+        notification.style.opacity = '0'; // Start fading out
+        setTimeout(() => document.body.removeChild(notification), 500); // Remove after fading out
+    }, 2000);
 }
+
 
