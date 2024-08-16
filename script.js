@@ -24,6 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
 function copyLink() {
     const dummy = document.createElement('input');
     const url = window.location.href;
+    dummy.style.position = 'absolute';
+    dummy.style.left = '-9999px'; // Move element out of view
     document.body.appendChild(dummy);
     dummy.value = url;
     dummy.select();
@@ -36,11 +38,17 @@ function copyLink() {
     notification.textContent = 'Link Copied!';
     document.body.appendChild(notification);
 
+    // Center the notification in the viewport
+    notification.style.top = `${window.innerHeight / 2}px`;
+    notification.style.left = `${window.innerWidth / 2}px`;
+    notification.style.transform = 'translate(-50%, -50%)';
+
     // Remove the notification after 2 seconds
     setTimeout(() => {
         notification.style.opacity = '0'; // Start fading out
         setTimeout(() => document.body.removeChild(notification), 500); // Remove after fading out
     }, 2000);
 }
+
 
 
