@@ -25,3 +25,11 @@ function copyLink() {
     alert("Website link copied to clipboard!");
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('header nav ul');
+
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+});
