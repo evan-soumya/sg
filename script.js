@@ -22,27 +22,27 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function copyLink() {
-    const dummy = document.createElement('input');
     const url = window.location.href;
-    document.body.appendChild(dummy);
-    dummy.value = url;
-    dummy.select();
-    document.execCommand('copy');
-    document.body.removeChild(dummy);
 
-    // Create a notification div
-    const notification = document.createElement('div');
-    notification.id = 'copy-notification';
-    notification.textContent = 'Link Copied!';
-    document.body.appendChild(notification);
+    // Use the modern Clipboard API to copy the URL
+    navigator.clipboard.writeText(url).then(() => {
+        // Create a notification div
+        const notification = document.createElement('div');
+        notification.id = 'copy-notification';
+        notification.textContent = 'Link Copied!';
+        document.body.appendChild(notification);
 
-    // Position notification at the center of the screen
-    notification.style.top = `${window.innerHeight / 2 - notification.offsetHeight / 2}px`;
-    notification.style.left = `${window.innerWidth / 2 - notification.offsetWidth / 2}px`;
+        // Center the notification in the viewport
+        notification.style.top = `${window.innerHeight / 2}px`;
+        notification.style.left = `${window.innerWidth / 2}px`;
+        notification.style.transform = 'translate(-50%, -50%)';
 
-    // Remove the notification after 2 seconds
-    setTimeout(() => {
-        notification.style.opacity = '0'; // Start fading out
-        setTimeout(() => document.body.removeChild(notification), 500); // Remove after fading out
-    }, 2000);
+        // Remove the notification after 2 seconds
+        setTimeout(() => {
+            notification.style.opacity = '0'; // Start fading out
+            setTimeout(() => document.body.removeChild(notification), 500); // Remove after fading out
+        }, 2000);
+    }).catch(err => {
+        console.error('Could not copy text: ', err);
+    });
 }
