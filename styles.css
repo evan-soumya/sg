@@ -237,3 +237,103 @@ footer p {
     transform: scale(0.95); /* Slightly smaller on click */
 }
 
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        display: none; /* Hide by default for mobile */
+    }
+
+    header .nav-toggle {
+        display: block;
+        color: #fff;
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+
+    .intro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro h1 {
+        font-size: 2em;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .circular-image {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px;
+    }
+
+    .info-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-columns .column {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .hover-item {
+        width: 100%;
+    }
+
+    #contact form {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    #contact form input,
+    #contact form textarea {
+        font-size: 1em;
+    }
+
+    .dynamic-text {
+        font-size: 1.2em;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    .intro h1 {
+        font-size: 1.5em;
+    }
+
+    .circular-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .info-columns .column {
+        width: 100%;
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.intro h1 {
+    font-size: 3em;
+    margin-right: 20px;
+    /* Mobile adjustment */
+    margin-right: 0;
+}
