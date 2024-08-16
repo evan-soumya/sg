@@ -1,5 +1,12 @@
 // script.js
+document.addEventListener('DOMContentLoaded', () => {
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('header nav ul');
 
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+});
 document.addEventListener('DOMContentLoaded', () => {
     const dynamicWords = ["Research Scholar", "Student", "Science Enthusiast"];
     let index = 0;
@@ -25,11 +32,3 @@ function copyLink() {
     alert("Website link copied to clipboard!");
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const navToggle = document.querySelector('.nav-toggle');
-    const navMenu = document.querySelector('header nav ul');
-
-    navToggle.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-    });
-});
