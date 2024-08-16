@@ -339,8 +339,8 @@ img {
 
 #copy-notification {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 50px;
+    right: 50px;
     background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
     padding: 10px 20px;
