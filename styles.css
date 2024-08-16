@@ -1,0 +1,194 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: #444;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header .social-links a {
+    color: #fff;
+    margin: 0 5px;
+    font-size: 1.2em;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #e8491d;
+}
+
+/* Main Content Styles */
+main {
+    margin-top: 70px;
+    padding: 20px;
+}
+
+.background-image {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.intro h1 {
+    font-size: 3em;
+    margin-right: 20px;
+}
+
+.circular-image {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.dynamic-text {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+.info-columns {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.info-columns .column {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
+}
+
+.info-columns .column h2 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.info-columns .column p, .info-columns .column ul, .info-columns .column li {
+    color: #ddd;
+}
+
+.info-columns .column li {
+    margin-bottom: 5px;
+}
+
+/* About Section Styles */
+.hover-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.hover-item {
+    background: #fff;
+    padding: 20px;
+    width: 45%;
+    margin: 10px 0;
+    transition: background 0.3s;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.hover-item:hover {
+    background: #f1f1f1;
+}
+
+.hover-item h3 {
+    margin-top: 0;
+}
+
+.hover-item p {
+    margin-bottom: 5px;
+}
+
+/* Contact Section Styles */
+#contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact form input, #contact form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact form button {
+    padding: 10px;
+    background: #50b3a2;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact form button:hover {
+    background: #429083;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
