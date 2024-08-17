@@ -357,3 +357,28 @@ img {
 }
 
 
+
+/* Define custom classes */
+.special-font-1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    color: #e53935; /* Red color */
+}
+
+.special-font-2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    color: #1e88e5; /* Blue color */
+}
+
+.special-font-3 {
+    font-family: 'Courier New', monospace;
+    font-size: 1.2em;
+    color: #50b3a2; /* Teal color */
+}
+
+.special-text {
+    font-family: 'Grey Qo', sans-serif;
+    color: #yourcolor; /* Change to your desired color */
+}
+
