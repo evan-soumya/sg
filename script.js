@@ -46,3 +46,9 @@ function copyLink() {
         console.error('Could not copy text: ', err);
     });
 }
+
+document.querySelector("form").addEventListener("submit", function() {
+    setTimeout(function() {
+        document.querySelector("form").reset();
+    }, 1000); // Reset form 1 second after submission
+});
