@@ -391,7 +391,7 @@ img {
         }
 
 .teaching-list {
-    padding-left: 100px; /* Indentation for the main list */
+    padding-left: 80px; /* Indentation for the main list */
     list-style-type: circle; /* Bullet style for the main list */
     color: #333; /* Text color */
 }
