@@ -389,3 +389,24 @@ img {
             opacity: 0.5; /* Opacity level (0 to 1) */
             margin: 20px 0; /* Spacing above and below the line */
         }
+
+.teaching-list {
+    padding-left: 100px; /* Indentation for the main list */
+    list-style-type: circle; /* Bullet style for the main list */
+    color: #333; /* Text color */
+}
+
+.teaching-list li {
+    margin-bottom: 8px; /* Space between list items */
+    font-size: 16px; /* Font size */
+    line-height: 1.5; /* Line height for readability */
+}
+
+.teaching-list ul {
+    padding-left: 40px; /* Additional indentation for nested list */
+    list-style-type: disc; /* Different bullet style for nested list */
+}
+
+.teaching-list ul li {
+    margin-bottom: 4px; /* Less space between nested list items */
+}
